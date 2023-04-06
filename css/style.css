@@ -63,8 +63,6 @@ nav .logo .point .drop {
 
 
 .navbar {
-    position: fixed;
-    top: 0;
     width: 100%;
     background-color: var(--white);
     box-shadow:0 2px 5px 1px rgba(64,60,67,.16);
@@ -101,7 +99,6 @@ header {
     justify-content: center;
     align-items: center;
     height: calc(100vh - 76px);
-    margin-top: 76px;
 }
 
 header .main-container{
@@ -124,6 +121,7 @@ header .main-container{
     justify-content: flex-end;
     align-items: center;
     position: relative;
+    animation: floating 5s ease-in-out infinite alternate;
 }
 
 header .main-container h2{
@@ -216,3 +214,11 @@ header .ribbon-wrap::after {
         transform: translateY(30px) scaleX(.85) rotate(45deg);
       }
 } 
+
+/* ghosty  */
+
+@keyframes floating {
+    0% { transform: translate(0,  0); }
+    50%  { transform: translate(0, 5px); }
+    100%   { transform: translate(0, 0); }   
+}
