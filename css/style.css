@@ -37,6 +37,10 @@ nav .logo .point {
     height: 11px;
     border-radius: 50%;
     background-color: var(--Borange);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav .logo .point:nth-child(2) {
@@ -44,6 +48,15 @@ nav .logo .point:nth-child(2) {
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
+}
+
+nav .logo .point .drop {
+    width: 6px;
+    height: 6px;
+    border-radius: 0 100% 100% 100%;
+    background-color: var(--Borange);
+    position: absolute;
+    animation: drop 2s infinite both;
 }
 
 /* Logo end */
@@ -105,7 +118,7 @@ header .main-container{
   0 -10px 80px rgba(0, 0, 0, 0.12)
 ;
     border-radius: 8px;
-    padding: 50px 100px;
+    padding: 50px 105px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
@@ -187,3 +200,19 @@ header .ribbon-wrap::after {
     position: absolute;
     z-index: -1;
 }
+
+/* animation for the drops */
+
+@keyframes drop {
+    0% {
+        transform: translateY(0) scaleX(.85) rotate(45deg);
+        animation-timing-function: ease-out;
+      }
+      60% {
+        transform: translateY(90%) scaleX(.85) rotate(45deg);
+        animation-timing-function: ease-in;
+      }
+      80%, 100% {
+        transform: translateY(30px) scaleX(.85) rotate(45deg);
+      }
+} 
