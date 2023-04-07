@@ -22,6 +22,20 @@ body {
 
 /* NavBar */
 
+/* scroll */
+
+.line {
+    width: 9px;
+    position: absolute;
+    background-color: var(--Borange);
+    z-index: 1000;
+    top: 85%;
+    border-radius: 0 0 50px 50px;
+}
+
+/* end scroll */
+
+
 /* Logo */
 nav .logo {
     position: relative;
@@ -51,8 +65,8 @@ nav .logo .point:nth-child(2) {
 }
 
 nav .logo .point .drop {
-    width: 6px;
-    height: 6px;
+    width: 7px;
+    height: 7px;
     border-radius: 0 100% 100% 100%;
     background-color: var(--Borange);
     position: absolute;
@@ -66,7 +80,6 @@ nav .logo .point .drop {
     width: 100%;
     background-color: var(--white);
     box-shadow:0 2px 5px 1px rgba(64,60,67,.16);
-    z-index:99999;
 }
 
 nav .container .navbar-brand,
