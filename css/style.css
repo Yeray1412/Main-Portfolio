@@ -31,6 +31,7 @@ body {
     z-index: 1000;
     top: 85%;
     border-radius: 0 0 50px 50px;
+    display: none;
 }
 
 /* end scroll */
@@ -115,7 +116,7 @@ header {
 }
 
 header .main-container{
-    background-color: white;
+    background-color: var(--white);
     width: 100%;
     height: calc(100vh - 110px);
     box-shadow:
@@ -211,6 +212,175 @@ header .ribbon-wrap::after {
     position: absolute;
     z-index: -1;
 }
+
+/*Swiper*/
+
+.my-work-sec {
+    margin-top: 100px;
+}
+
+.swiper {
+    display: flex;
+    align-items: center;
+    height: 600px;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide {
+    display: flex !important;
+    width: calc((100% - 60px) / 3) !important;
+    height: calc(100vh - 140px) !important;
+    justify-content: center; 
+    align-items: center;
+    margin-right: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow:
+    0 2.8px 5px rgba(0, 0, 0, 0.034),
+    0 5.7px 1px rgba(0, 0, 0, 0.048),
+    0 3.5px 0px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    2px 0px 5px rgba(0, 0, 0, 0.086);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.swiper-slide .box {
+    height: 190px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide .img-con {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Borange);
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086);
+}
+
+.swiper-slide .img-con svg {
+    fill: white;
+    width: 64px;
+}
+
+.swiper-slide .text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 168px;
+}
+
+.swiper-slide .text ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 260px;
+}
+
+.swiper-slide .text ul li {
+    background-color: #ebf0ee;
+    font-size: 12px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.swiper-slide button {
+    background-color: var(--Borange);
+    color: var(--white);
+    border: 0;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 40px;
+    box-shadow:0 2px 5px 1px rgba(64,60,67,.16);
+}
+
+.swiper-slide button:hover {
+    box-shadow: 0 2px 8px 1px rgba(64,60,67,.24);
+}
+
+.swiper-slide button:active {
+    background-color: var(--Bred);
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active.swiper-pagination-bullet-active-main {
+    background-color: white !important;
+}
+
+.swiper-button-prev {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    background-color: white;
+    z-index: 2;
+    height: 48px !important;
+    width: 48px !important;
+    border-radius: 24px;
+    position: absolute;
+    border: none;
+    outline: none;
+    box-shadow: 0px 3px 5px 0px #00000038;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swiper-button-prev svg {
+    width: 24px;
+    color: #333;
+  }
+
+  .swiper-button-prev::after {
+    display: none;
+  }
+  
+  .swiper-button-next::after {
+    display: none;
+  }
+  
+  .swiper-button-next {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    background-color: white;
+    z-index: 2;
+    height: 48px !important;
+    width: 48px !important;
+    border-radius: 24px;
+    position: absolute;
+    border: none;
+    outline: none;
+    box-shadow: 0px 3px 5px 0px #00000038;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swiper-button-next svg {
+    width: 24px;
+    color: #333;
+  }
+
+/*Swiper End*/
 
 /* animation for the drops */
 
