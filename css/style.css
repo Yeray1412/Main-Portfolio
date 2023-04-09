@@ -31,7 +31,6 @@ body {
     z-index: 1000;
     top: 85%;
     border-radius: 0 0 50px 50px;
-    display: none;
 }
 
 /* end scroll */
@@ -373,12 +372,25 @@ header .ribbon-wrap::after {
     display: flex;
     align-items: center;
     justify-content: center;
+    right: 10px;
   }
 
   .swiper-button-next svg {
     width: 24px;
     color: #333;
   }
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background-color: #e8e8e8;
+    border: solid 1px #bbb;
+}
+
+.swiper-button-next:active,
+.swiper-button-prev:hover {
+    background-color: #e8e8e8;
+    border-color: #e8e8e8;
+}
 
 /*Swiper End*/
 
